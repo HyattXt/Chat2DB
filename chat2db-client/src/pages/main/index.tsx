@@ -98,35 +98,6 @@ function MainPage(props: IProps) {
 
   return (
     <div className={styles.page}>
-      <div className={styles.layoutLeft}>
-        <BrandLogo size={40} onClick={() => {}} className={styles.brandLogo} />
-        <ul className={styles.navList}>
-          {navConfig.map((item, index) => {
-            return (
-              <li
-                key={item.key}
-                className={classnames({
-                  [styles.activeNav]: item.key == activeNav.key,
-                })}
-                onClick={() => switchingNav(item)}
-              >
-                <Iconfont style={{ fontSize: `${item.iconFontSize}px` }} className={styles.icon} code={item.icon} />
-                {/* <div>{item.title}</div> */}
-              </li>
-            );
-          })}
-        </ul>
-        <div className={styles.footer}>
-          {/* <Iconfont
-            code="&#xe67c;"
-            className={styles.questionIcon}
-            onClick={() => {
-              window.open('https://github.com/chat2db/chat2db/wiki');
-            }}
-          /> */}
-          <Setting className={styles.setIcon}></Setting>
-        </div>
-      </div>
       <div className={styles.layoutRight}>
         {navConfig.map((item) => {
           return (

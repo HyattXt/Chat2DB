@@ -158,7 +158,7 @@ const WorkspaceRightItem = memo<IProps>(function (props) {
             isActive={isActive}
             appendValue={appendValue}
             executeParams={{ ...data }}
-            hasAiChat={true}
+            hasAiChat={false}
             hasAi2Lang={true}
             onExecuteSQL={handleExecuteSQL}
             onConsoleSave={() => {

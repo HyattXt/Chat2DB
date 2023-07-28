@@ -163,7 +163,7 @@ const WorkspaceRight = memo<IProps>(function (props) {
   };
 
   function render() {
-    return <div className={styles.ears}>Chat2DB</div>;
+    return <div className={styles.ears}></div>;
   }
 
   function editableNameOnBlur(t: IOption) {
