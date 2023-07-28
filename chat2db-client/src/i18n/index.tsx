@@ -9,7 +9,7 @@ const locale = {
   'zh-cn': zhCN,
 };
 
-export const currentLang: LangType = getLang() || LangType.EN_US;
+export const currentLang: LangType = getLang() || LangType.ZH_CN;
 
 export const isEn = currentLang === LangType.EN_US;
 
