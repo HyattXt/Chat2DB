@@ -2,7 +2,7 @@ import { ThemeType, PrimaryColorType, LangType } from '@/constants';
 import { ICurWorkspaceParams } from '@/models/workspace';
 
 export function getLang(): LangType {
-  return (localStorage.getItem('lang') as LangType) || 'en-us';
+  return (localStorage.getItem('lang') as LangType) || 'zh-cn';
 }
 
 export function setLang(lang: LangType) {
